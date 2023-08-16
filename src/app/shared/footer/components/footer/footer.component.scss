@@ -1,0 +1,77 @@
+.footer-bottom {
+  padding-block: 20px;
+  border-block-start: 1px solid #8b8c89;
+}
+
+.copyright {
+  margin-block-end: 15px;
+}
+
+.footer-image {
+  width: 15rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #caf1d8;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.content {
+  justify-content: start;
+  text-align: start;
+  min-width: 220px;
+  margin-right: 5rem;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 767px) and (max-width: 870px) {
+  .email span {
+    font-size: small;
+  }
+}
+
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,0 +1,244 @@
+// @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+.header {
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  height: 5rem;
+  z-index: 2;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 2rem;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  filter: invert(1);
+}
+
+.navbar-scrolled {
+  background: #938362 !important;
+  width: 100%;
+}
+
+.header-image {
+  width: 15rem;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-display {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.text {
+  font-size: 0.7rem;
+}
+
+.slide-in {
+  transform: translateX(0);
+  transition: transform 0.6s ease-out;
+}
+
+.slide-out {
+  transform: translateX(100%);
+  transition: transform 0.6s ease-out;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(27, 72, 101, 0.9);
+  z-index: 2;
+  transition: transform 0.9s ease-out;
+}
+
+.menu.slide-in {
+  transform: translateX(0);
+}
+
+.menu .nav-links ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu .nav-links ul li {
+  padding: 1rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(1) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.4s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(3) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(4) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.8s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(5) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(6) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.1s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(7) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.2s;
+}
+
+.menu.slide-in .nav-links ul li:nth-child(8) {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.3s;
+}
+
+.menu .nav-links ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 40px;
+  line-height: 1.33rem;
+  font-family: "Spectral", serif;
+}
+
+li a:hover:not(.active) {
+  color: #4e89ac !important;
+}
+
+.active {
+  color: #4e89ac !important;
+}
+
+.admission-links {
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  margin-right: 15rem;
+}
+
+.menu .admission-links ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: "Spectral", serif;
+}
+
+.aboutCalm-links {
+  position: absolute;
+  top: 12.5rem;
+  width: 100%;
+  margin-right: 16rem;
+}
+
+.menu .aboutCalm-links ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: "Spectral", serif;
+}
+
+@media (max-width: 707px) {
+  .menu .nav-links ul li {
+    padding: 0.5rem;
+  }
+
+  .menu .nav-links ul li a {
+    font-size: 21px;
+    padding: 2px 0 !important;
+  }
+
+  .menu .admission-links ul li a {
+    font-size: 21px;
+  }
+
+  .menu .admission-links ul li {
+    padding: 0.5rem;
+  }
+
+  .admission-links {
+    top: 16rem;
+    margin-right: 9rem;
+  }
+
+  .aboutCalm-links {
+    top: 11rem;
+    margin-right: 9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu .nav-links ul li {
+    padding: 0.5rem;
+  }
+
+  .menu .nav-links ul li a {
+    font-size: 18px;
+  }
+
+  .menu .admission-links ul li a {
+    font-size: 18px;
+  }
+
+  .menu .admission-links ul li {
+    padding: 0.5rem;
+  }
+
+  .admission-links {
+    top: 16rem;
+    margin-right: 7rem;
+  }
+}

@@ -1,0 +1,28 @@
+<mat-toolbar
+  class="header"
+  [ngClass]="{ header: true, 'navbar-scrolled': scrolled }"
+>
+  <div class="container">
+    <div class="header-logo">
+      <img
+        src="./assets/images/hacienda.png"
+        alt=""
+        class="header-image"
+        routerLink="/home"
+      />
+    </div>
+
+    <div class="menu-container card flex justify-content-center">
+      <!-- <p-toast></p-toast> -->
+      <p-menu #menu [model]="items" [popup]="true"></p-menu>
+      <button
+        pButton
+        type="button"
+        (click)="menu.toggle($event)"
+        icon="pi pi-bars"
+        label="Menu"
+      ></button>
+    </div>
+  </div>
+</mat-toolbar>
+
